@@ -70,14 +70,22 @@ function writePassword() {
     else {
         alert("Password must contain numbers, lowercase, uppercase, and special characters!")
 
+        writePassword()
+
     }
 
-    let inputLength = (Math.floor(Math.random()) * 10) + pwLength.value;
+    let num = (Math.floor(Math.random()) * 10) + pwLength.value;
 
+    for (let randomCharacter = 0; randomCharacter <= num; randomCharacter++) {
+        const randomCharacter = array[randomCharacter];
+
+
+        console.log(inputLength);
+
+    }
 
     passwordText.value = password;
 
-    console.log(inputLength);
 
 }
 
